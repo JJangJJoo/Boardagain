@@ -1,0 +1,6 @@
+<h1>글수정하기</h1>
+<form action ="/update/<%= @editpost.id %>">
+  <input type = "text" name ="title" value = "<%= @editpost.title %>"><br>
+  <input type = "text" name ="content" value = "<%= @editpost.content %>"><br>
+  <button type="submit">Submit</button>
+</form>

@@ -1,0 +1,16 @@
+
+    <h1>Welcome To Board2!</h1>
+
+    <% @posts.each do |post| %>
+          <p>
+          <%= post.id %>
+          Title: <%= post.title %>
+          Content: <%= post.content %>
+          <%= post.author %>
+          <<%= post.created_at %>
+          <a href="/destroy/<%= post.id %>">[삭제]</a>
+          <a href ="/edit/<%= post.id %>">[수정]</a>
+        </p>
+
+    <% end %>
+    <a href = "/new">글쓰기</a>
